@@ -26,14 +26,21 @@ export default function App() {
   return (
    <>
 
-      {Loading ? <div style={{backgroundColor : 'red' , height : '100vh'}}>loading</div>:
+      {/* {Loading ? <div style={{backgroundColor : 'red' , height : '100vh'}}>loading</div>:
         <>
         <Home/>
          <Service />
         <LastofOffersProducts />
          <FooterBar /> 
         </>
-       }
+       } */}
+
+       <>
+        <Home/>
+         <Service />
+        <LastofOffersProducts />
+         <FooterBar /> 
+        </>
 
 
    </>

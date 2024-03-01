@@ -7,6 +7,7 @@
   }
   .NavBar {
     /* margin:  10px auto; */
+    margin: 0 !important;
     margin-bottom: 30px;
     direction: rtl;
   }
