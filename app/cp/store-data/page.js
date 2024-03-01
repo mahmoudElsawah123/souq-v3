@@ -103,7 +103,7 @@ useEffect(()=>{
         });
       setUploadLogo(res);
       setLoadingImage("");
-    };
+    }
   };
 
   const UploadImge = (file) => {
@@ -223,17 +223,16 @@ useEffect(()=>{
       <div  className={styles.main_div}>
         <h2  className={styles.heading_h2}>تغير لوجو المتجر</h2>
         <div   className={styles.image_select_container}>
-          {userInfo && (
             <div className={styles.Card_image}>
               {loadngImage || window.localStorage.getItem("souqUserLogo") ? (
                 <LazyLoadImage
                   src={`https://souq.deltawy.com/imag?id=${
                     loadngImage || window.localStorage.getItem("souqUserLogo")
                   }`}
-                  alt={userInfo.name}
                   effect="blur"
                   width={100}
                   height={100}
+                  style={{borderRadius : '50%'}}
                 />
               ) : (
                 <LazyLoadImage
@@ -247,7 +246,6 @@ useEffect(()=>{
                 />
               )}
             </div>
-          )}
           <div  className={styles.Cardselect_div_image}>
             <label htmlFor="img">
               {" "}
